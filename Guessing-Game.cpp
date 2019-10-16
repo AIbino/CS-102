@@ -1,5 +1,7 @@
-// Guessing game
-//
+// Guessing Game
+// Gabriel Mendez-Frances
+// CS 105-02
+// 10-8-2019
 
 #include <stdio.h>
 #include <stdlib.h>
