@@ -1,4 +1,4 @@
-// Lab 6 Problem 2
+// Lab 6 Problem 3
 // Gabriel Mendez-Frances
 // CS 102-02
 // 10-29-2019
@@ -6,34 +6,23 @@
 #include <stdio.h>
 #define N 10
 
-int main(void) {  
-	int arr[N] = { 0 };
-	int max, min, sum, mean;
+int main(void) {
+	int arr1[N] = { 0 };
+	int arr2[N] = { 0 };
 
 	for (int i = 0; i < N; i++) {
 		printf("Enter element %d of the array.\n", i);
-		scanf("%d", &arr[i]);
+		scanf("%d", &arr1[i]);
 	}
 
 	printf("\nYou entered the following elements:\n");
 	for (int i = 0; i < N; i++) {
-		printf("%d\n", arr[i]);
+		printf("%d ", arr1[i]);
 	}
 
-	min = arr[0];
-	max = arr[0];
-	sum = 0;
-	mean = 0;
-
+	printf("\nThe array has been copied, as shown here:\n");
 	for (int i = 0; i < N; i++) {
-		sum = sum + arr[i];
-		if (arr[i] > max) {
-			max = arr[i];
-		}
-		if (arr[i] < min) {
-			min = arr[i];
-		}
-		mean = sum / N;
+		arr2[i] = arr1[i];
+		printf("%d ", arr2[i]);
 	}
-	printf("\nThe sum is: %d\nThe min is: %d\nThe max is: %d \nThe average is: %d\n", sum, min, max, mean);
 }
